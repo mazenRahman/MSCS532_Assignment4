@@ -1,0 +1,47 @@
+# Algorithm Implementations: Heapsort and Priority Queue with Task Management
+
+This project includes two algorithms: Heapsort for sorting arrays and a Priority Queue for managing tasks by priority. Both implementations include test cases to validate functionality.
+
+---
+
+## 1. Heapsort Algorithm
+
+### Description
+Heapsort is an efficient in-place sorting algorithm that uses a binary max-heap to sort an array in ascending order. The algorithm has a time complexity of \( O(n \log n) \) in all cases.
+
+### Functions
+
+- **`heapify(arr, n, i)`**: Maintains the max-heap property by sifting down the element at index `i` in the array `arr`.
+- **`heapsort(arr)`**: Sorts the array by building a max-heap and repeatedly extracting the maximum element.
+
+### Test Cases
+Test cases for Heapsort include:
+- Random unsorted array
+- Array with repeated elements
+- Empty array
+- Single-element array
+
+---
+
+## 2. Priority Queue with Task Management
+
+### Description
+This Priority Queue is implemented as a min-heap, where tasks are managed based on priority. Lower priority values indicate higher priority in this min-heap structure.
+
+### Classes and Methods
+
+- **`Task` Class**: Represents a task with `task_id`, `priority`, `arrival_time`, and `deadline`. Priority determines task order.
+- **`PriorityQueue` Class**:
+  - **`insert(task)`**: Adds a new task to the queue.
+  - **`extract_min()`**: Removes the task with the highest priority.
+  - **`increase_priority(task_id, new_priority)`**: Adjusts the priority of a specific task.
+  - **`display()`**: Shows all tasks in the queue.
+
+### Interactive Menu
+An interactive menu is provided to:
+1. Insert tasks.
+2. Extract the highest-priority task.
+3. Increase a task’s priority.
+4. Display all tasks.
+
+---
